@@ -1,0 +1,27 @@
+.element {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+
+	min-height: 352px;
+	min-width: 280px;
+	max-width: 350px;
+}
+
+.element span {
+	font-size: 30px;
+	font-weight: 500;
+	line-height: 36px;
+}
+
+.element h5 {
+	font-size: 20px;
+	font-weight: 600;
+	line-height: 24.38px;
+}
+
+.element p {
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 25.6px;
+}

@@ -13,7 +13,7 @@ const PricesBlock = (props: Props) => {
 				<h3 className='block__title'>Стоимость</h3>
 				<div className={styles.options}>
 					{productList.map((el, index) => {
-						return <ProductElement {...el} />;
+						return <ProductElement key={index} {...el} />;
 					})}
 				</div>
 			</div>
