@@ -19,6 +19,16 @@ a {
 	text-decoration: none;
 }
 
+button{
+	background: none;
+	border: none;
+	cursor: pointer;
+}
+
+a, button, input, path, svg{
+	transition: 0.2s all;
+}
+
 :root {
 	--color-primary: #4ca64b;
 	--color-bg: #f1efec;

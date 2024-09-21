@@ -1,14 +1,16 @@
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import './App.css';
-
-import Header from './components/Header/Header';
-import Footer from './components/Footer/Footer';
 import MainPage from './components/MainPage/MainPage';
+import PageWrapper from './components/PageWrapper/PageWrapper';
 
 const router = createBrowserRouter([
 	{
 		path: '/',
-		element: <MainPage />,
+		element: (
+			<PageWrapper>
+				<MainPage />
+			</PageWrapper>
+		),
 		errorElement: <>Упс...Ошибка</>,
 	},
 	{
@@ -21,9 +23,7 @@ const router = createBrowserRouter([
 function App() {
 	return (
 		<div className='app'>
-			<Header />
 			<RouterProvider router={router} />
-			<Footer />
 		</div>
 	);
 }
