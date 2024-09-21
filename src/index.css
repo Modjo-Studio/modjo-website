@@ -1,32 +1,45 @@
 body {
 	margin: 0;
 	background-color: var(--color-bg);
-	font-family: 'Montserrat', sans-serif;
+	font-family: "Montserrat", sans-serif;
 	font-optical-sizing: auto;
 }
 
 code {
-	font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-		monospace;
+	font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
 }
 
 * {
 	box-sizing: border-box;
 	outline: none;
+	color: var(--color-black);
 }
 
 a {
 	text-decoration: none;
 }
 
-button{
+button {
 	background: none;
 	border: none;
 	cursor: pointer;
 }
 
-a, button, input, path, svg{
+a,
+button,
+input,
+path,
+svg {
 	transition: 0.2s all;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0;
 }
 
 :root {
@@ -39,8 +52,8 @@ a, button, input, path, svg{
 	padding: 0px 195px;
 }
 
-.block__title{
+.block__title {
 	font-weight: 500;
 	font-size: 40px;
-	color:var(--color-black);
+	color: var(--color-black);
 }

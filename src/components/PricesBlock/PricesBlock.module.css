@@ -1,0 +1,14 @@
+.block {
+	display: flex;
+	flex-direction: column;
+	gap: 70px;
+}
+
+.options {
+	margin-left: auto;
+
+	width: 1140px;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
