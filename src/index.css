@@ -1,0 +1,26 @@
+body {
+	margin: 0;
+	background-color: var(--color-bg);
+	font-family: 'Montserrat', sans-serif;
+	font-optical-sizing: auto;
+}
+
+code {
+	font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+		monospace;
+}
+
+* {
+	box-sizing: border-box;
+	outline: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+:root {
+	--color-primary: #4ca64b;
+	--color-bg: #f1efec;
+	--color-black: #322f2f;
+}
