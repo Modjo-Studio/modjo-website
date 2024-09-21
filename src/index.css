@@ -24,3 +24,13 @@ a {
 	--color-bg: #f1efec;
 	--color-black: #322f2f;
 }
+
+.container {
+	padding: 0px 195px;
+}
+
+.block__title{
+	font-weight: 500;
+	font-size: 40px;
+	color:var(--color-black);
+}
