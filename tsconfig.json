@@ -20,13 +20,14 @@
     "noEmit": true,
     "jsx": "react-jsx"
   },
+  "baseUrl": "./src",
+  "paths": {
+    "@img/*": ["./assets/img/*"],
+    "@svg/*": ["./assets/svg/*"],
+    "@components/*" : ["./components/*"],
+    "@utils/*" : ["./utils/*"]
+  },
   "include": [
     "src"
   ],
-  "paths": {
-    "@img/*": ["assets/img/*"],
-    "@svg/*": ["assets/svg/*"],
-    "@components/*" : ["components/*"],
-    "@utils/*" : ["utils/*"]
-  }
 }
