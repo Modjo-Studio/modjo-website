@@ -5,12 +5,13 @@ import { ReactComponent as Telegram } from '@svg/telegram.svg';
 import { ReactComponent as Mail } from '@svg/mail.svg';
 import { ReactComponent as Whatsapp } from '@svg/whatsapp.svg';
 import { ReactComponent as Behance } from '@svg/behance.svg';
+import { BLOCKS_ID } from '../../utils/constants';
 
 type Props = {};
 
 const ContactsBlock = (props: Props) => {
 	return (
-		<BlockWrapper minHeight='55dvh'>
+		<BlockWrapper blockId={BLOCKS_ID.CONTACTS} minHeight='55dvh'>
 			<div className={styles.block}>
 				<h3 className='block__title'>Контакты</h3>
 				<div className={styles.options}>

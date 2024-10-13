@@ -1,0 +1,57 @@
+.block {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+}
+
+.title {
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 45px;
+    line-height: 120%;
+}
+
+.texts {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.text {
+    font-size: 18px;
+    line-height: 140%;
+}
+
+@media(min-width: 768px) and (max-width: 1024px) {
+    .block {
+        gap: 60px;
+    }
+
+    .title {
+        font-size: 50px;
+        text-align: center;
+    }
+
+    .text {
+        font-size: 20px;
+        text-align: center;
+    }
+}
+
+@media(min-width: 1024px) {
+    .block {
+        gap: 60px;
+    }
+
+    .title {
+        font-size: 70px;
+        text-align: center;
+    }
+
+    .text {
+        font-size: 20px;
+        text-align: center;
+    }
+}
