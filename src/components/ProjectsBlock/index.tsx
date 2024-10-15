@@ -11,7 +11,7 @@ const ProjectBlock = () => {
 				<h2 className={styles.title}>проекты</h2>
 				<div className={styles.projects}>
 					{
-						ProjectsInfo.map(({ image, title, date, info }) => <ProjectCard info={info} date={date} image={image} title={title}/>)
+						ProjectsInfo.map(({ image, title, date, info }, index) => <ProjectCard key={index} info={info} date={date} image={image} title={title}/>)
 					}
 				</div>
 			</div>

@@ -29,7 +29,7 @@ export const ProjectCard: FC<Props> = ({image, date, title, info}) => (
 			<div className={styles.info}>
 				{
 					info.map(({ text, Icon }) => {
-						return <div className={styles.infoItem}>
+						return <div key={text} className={styles.infoItem}>
 							<Icon />
 							<div>{text}</div>
 						</div>;
