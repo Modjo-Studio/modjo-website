@@ -1,9 +1,9 @@
-@media (hover:hover) {
-	.header__nav_links button:hover{
-		color:var(--color-primary);
+@media (hover: hover) {
+	.header__nav_links button:hover {
+		color: var(--color-primary);
 	}
-	.header svg:hover path{
-		stroke:var(--color-primary);
+	.header svg:hover path {
+		stroke: var(--color-primary);
 	}
 }
 
@@ -22,7 +22,7 @@
 	gap: 25px;
 }
 
-.header__nav_links button{
+.header__nav_links button {
 	padding: 10px;
 
 	font-family: Montserrat;
@@ -31,6 +31,10 @@
 	line-height: 28px;
 
 	text-transform: lowercase;
-
 }
 
+@media (width < 1024px) {
+	.header__nav_links {
+		display: none;
+	}
+}

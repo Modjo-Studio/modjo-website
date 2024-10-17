@@ -1,4 +1,5 @@
 import tourCompass from './../../assets/img/tour-compass.png';
+import hotel from './../../assets/img/hotel.png';
 import { ReactComponent as Analytics } from '@svg/analytics.svg';
 import { ReactComponent as Design } from '@svg/design.svg';
 import { ReactComponent as Laptop } from '@svg/laptop.svg';
@@ -9,64 +10,66 @@ import { ReactComponent as Voice } from '@svg/voice.svg';
 export const ProjectsInfo = [
 	{
 		image: tourCompass,
-		date: "В разработке",
-		title: "Сайт для путешественников «Tour compass»",
+		date: 'В разработке',
+		title: 'Сайт для путешественников «Tour compass»',
 		info: [
 			{
 				Icon: Analytics,
-				text: "аналитика"
+				text: 'аналитика',
 			},
 			{
 				Icon: Star,
-				text: "фирменный стиль"
+				text: 'фирменный стиль',
 			},
 			{
 				Icon: Proto,
-				text: "прототипирование"
+				text: 'прототипирование',
 			},
 			{
 				Icon: Design,
-				text: "дизайн"
+				text: 'дизайн',
 			},
 			{
 				Icon: Laptop,
-				text: "верстка"
+				text: 'верстка',
 			},
 			{
 				Icon: Voice,
-				text: "продвижение"
-			}
+				text: 'продвижение',
+			},
 		],
+		url: 'https://tour-compass.com',
 	},
 	{
-		image: tourCompass,
-		date: "21/01/2024 - 05/03/2024",
-		title: "Сайт для путешественников «Tour compass»",
+		image: hotel,
+		date: '21/10/2023 - 10/11/2023',
+		title: 'Сайт отеля «Счастье»',
 		info: [
 			{
 				Icon: Analytics,
-				text: "аналитика"
+				text: 'аналитика',
 			},
 			{
 				Icon: Star,
-				text: "фирменный стиль"
+				text: 'фирменный стиль',
 			},
 			{
 				Icon: Proto,
-				text: "прототипирование"
+				text: 'прототипирование',
 			},
 			{
 				Icon: Design,
-				text: "дизайн"
+				text: 'дизайн',
 			},
 			{
 				Icon: Laptop,
-				text: "верстка"
+				text: 'верстка',
 			},
 			{
 				Icon: Voice,
-				text: "продвижение"
-			}
+				text: 'продвижение',
+			},
 		],
+		url: 'https://отель-счастье.рф',
 	},
 ];

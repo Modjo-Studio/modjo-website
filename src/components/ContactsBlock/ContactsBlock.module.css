@@ -1,13 +1,22 @@
+@media (hover: hover) {
+	.element a:hover {
+		color: var(--color-primary);
+	}
+}
+
 .block {
 	display: flex;
 	flex-direction: column;
 	gap: 70px;
+
+	width: 100%;
 }
 
 .options {
 	display: flex;
 	align-items: center;
 	gap: 30px;
+	flex-wrap: wrap;
 }
 
 .element {
@@ -41,4 +50,32 @@
 	line-height: 17.07px;
 	letter-spacing: 0.02em;
 	text-align: left;
+}
+
+@media (width<500px) {
+	.options {
+		gap: 10px;
+	}
+	.element {
+		width: 210px;
+		height: 152px;
+		padding: 20px;
+
+		align-items: center;
+		justify-content: center;
+	}
+
+	.element span {
+		font-size: 16px;
+	}
+
+	.element a {
+		font-size: 12px;
+	}
+}
+
+@media (width<450px) {
+	.element {
+		width: 100%;
+	}
 }

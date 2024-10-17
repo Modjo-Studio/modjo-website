@@ -11,34 +11,29 @@ type Props = {
 	date: string;
 	title: string;
 	info: Array<Info>;
+	url: string;
 };
 
-export const ProjectCard: FC<Props> = ({image, date, title, info}) => (
-	<div className={styles.card}>
-		<div className={styles.date}>
-			{date}
-		</div>
-		<img className={styles.image} alt="project" src={image} />
+export const ProjectCard: FC<Props> = ({ image, date, title, info, url }) => (
+	<article className={styles.card}>
+		<p className={styles.date}>{date}</p>
+		<img className={styles.image} alt='project' src={image} />
 		<div className={styles.container}>
-			<h3 className={styles.title}>
-				{title}
-			</h3>
-			<div className={styles.text}>
-				Что мы сделали в этом проекте:
-			</div>
+			<h3 className={styles.title}>{title}</h3>
+			<p className={styles.text}>Что мы сделали в этом проекте:</p>
 			<div className={styles.info}>
-				{
-					info.map(({ text, Icon }) => {
-						return <div key={text} className={styles.infoItem}>
+				{info.map(({ text, Icon }) => {
+					return (
+						<div key={text} className={styles.infoItem}>
 							<Icon />
 							<div>{text}</div>
-						</div>;
-					})
-				}
+						</div>
+					);
+				})}
 			</div>
-			<div className={styles.button}>
-				Подробнее
-			</div>
+			<a href={url} className={styles.button} target='_blank' rel='noreferrer'>
+				Посмотреть проект
+			</a>
 		</div>
-	</div>
+	</article>
 );

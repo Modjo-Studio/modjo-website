@@ -1,5 +1,11 @@
+@media (hover: hover) {
+    .item:hover {
+        color: var(--color-primary);
+    }
+}
+
 .footer {
-    border-top: 1px solid #322F2F;
+    border-top: 1px solid #322f2f;
     display: flex;
     flex-direction: column;
     gap: 40px;
@@ -29,7 +35,7 @@
     text-transform: lowercase;
 }
 
-@media(min-width: 1024px) {
+@media (min-width: 1024px) {
     .footer {
         gap: 50px;
         padding: 100px 0;

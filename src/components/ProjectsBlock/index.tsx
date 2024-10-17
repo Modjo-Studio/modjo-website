@@ -10,9 +10,16 @@ const ProjectBlock = () => {
 			<div className={styles.block}>
 				<h2 className={styles.title}>проекты</h2>
 				<div className={styles.projects}>
-					{
-						ProjectsInfo.map(({ image, title, date, info }, index) => <ProjectCard key={index} info={info} date={date} image={image} title={title}/>)
-					}
+					{ProjectsInfo.map(({ image, title, date, info, url }, index) => (
+						<ProjectCard
+							key={index}
+							info={info}
+							date={date}
+							image={image}
+							title={title}
+							url={url}
+						/>
+					))}
 				</div>
 			</div>
 		</BlockWrapper>
@@ -20,5 +27,3 @@ const ProjectBlock = () => {
 };
 
 export default ProjectBlock;
-
-

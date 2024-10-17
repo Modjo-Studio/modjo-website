@@ -7,6 +7,7 @@
 	border-radius: 20px;
 
 	padding: 40px 24px 30px;
+	gap: 20px;
 }
 
 .card__header {
@@ -27,7 +28,6 @@
 	font-size: 20px;
 	font-weight: 600;
 	line-height: 24.38px;
-	color: black;
 }
 
 .card__subtitle {
@@ -53,4 +53,43 @@
 	font-weight: 400;
 	line-height: 25.6px;
 	text-align: left;
+}
+
+@media (width < 1024px) {
+	.product__card {
+		height: auto;
+	}
+
+	.card__subtitle {
+		width: 100%;
+	}
+}
+
+@media (width < 560px) {
+	.card__price {
+		width: 50%;
+		text-align: right;
+	}
+
+	.card__title,
+	.card__price {
+		font-size: 18px;
+	}
+
+	.card__subtitle,
+	.card__footer span {
+		font-size: 14px;
+	}
+}
+
+@media (width < 450px) {
+	.card__header {
+		flex-direction: column;
+		align-items: flex-start;
+		gap: 10px;
+	}
+
+	.card__price {
+		text-align: left;
+	}
 }

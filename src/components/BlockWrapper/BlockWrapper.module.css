@@ -1,4 +1,18 @@
-.block{
+.block {
 	padding-top: 140px;
 	padding-bottom: 140px;
+}
+
+@media (width < 1024px) {
+	.block {
+		padding-top: 100px;
+		padding-bottom: 100px;
+	}
+}
+
+@media (width < 500px) {
+	.block {
+		padding-top: 60px;
+		padding-bottom: 60px;
+	}
 }
