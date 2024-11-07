@@ -23,7 +23,11 @@ const ContactsBlock = (props: Props) => {
 					<article className={styles.element}>
 						<Telegram />
 						<span>телеграм</span>
-						<a href='http://' target='_blank' rel='noopener noreferrer'>
+						<a
+							href='https://t.me/kudryaviy11'
+							target='_blank'
+							rel='noopener noreferrer'
+						>
 							ПЕРЕЙТИ
 						</a>
 					</article>
@@ -35,12 +39,22 @@ const ContactsBlock = (props: Props) => {
 					<article className={styles.element}>
 						<Whatsapp />
 						<span>Whatsapp</span>
-						<a href='tel:+79991846815'>+7 (999) 184 68-15</a>
+						<a
+							href='https://api.whatsapp.com/send/?phone=79991846815'
+							target='_blank'
+							rel='noopener noreferrer'
+						>
+							+7 (999) 184 68-15
+						</a>
 					</article>
 					<article className={styles.element}>
 						<Behance />
 						<span>Behance</span>
-						<a href='http://' target='_blank' rel='noopener noreferrer'>
+						<a
+							href='https://www.behance.net/annbraj'
+							target='_blank'
+							rel='noopener noreferrer'
+						>
 							ПЕРЕЙТИ
 						</a>
 					</article>

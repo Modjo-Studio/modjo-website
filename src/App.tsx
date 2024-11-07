@@ -2,6 +2,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import './App.css';
 import MainPage from './components/MainPage/MainPage';
 import PageWrapper from './components/PageWrapper/PageWrapper';
+import ErrorPage from './components/ErrorPage/ErrorPage';
 
 const router = createBrowserRouter([
 	{
@@ -11,20 +12,20 @@ const router = createBrowserRouter([
 				<MainPage />
 			</PageWrapper>
 		),
-		errorElement: <>Упс...Ошибка</>,
+		errorElement: <ErrorPage />,
 	},
 	{
 		path: '/projects/*',
 		element: <>проекты</>,
-		errorElement: <>Упс...Ошибка</>,
+		errorElement: <ErrorPage />,
 	},
 ]);
 
 function App() {
 	return (
-		<div className='app'>
+		<main className='app'>
 			<RouterProvider router={router} />
-		</div>
+		</main>
 	);
 }
 

@@ -4,6 +4,7 @@ import { ReactComponent as Logo } from '@svg/logo.svg';
 import { Link } from 'react-router-dom';
 import { links } from '../../utils/configs';
 import scrollToBlock from '../../utils/scrollToBlock';
+import BurgerMenu from '../BurgerMenu/BurgerMenu';
 
 type Props = {};
 
@@ -13,6 +14,7 @@ const Header = (props: Props) => {
 			<Link to='/'>
 				<Logo />
 			</Link>
+			<BurgerMenu />
 			<nav className={styles.header__nav_links}>
 				{links.map((el, index) => {
 					return (
