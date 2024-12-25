@@ -18,6 +18,18 @@
     margin-top: 30px;
     font-size: 16px;
     line-height: 120%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.policy {
+    text-decoration: underline;
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    line-height: 120%;
+    cursor: pointer;
 }
 
 .list {
@@ -43,6 +55,7 @@
 
     .rights {
         margin-top: 20px;
+        flex-direction: row;
     }
 
     .list {

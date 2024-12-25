@@ -3,11 +3,23 @@ import { Link } from 'react-router-dom';
 import { ReactComponent as Logo } from '@svg/logo.svg';
 import { FC } from 'react';
 
-export const FooterMobile: FC = () => (
+type Props = {
+	isOpen: boolean;
+	setIsOpen: (isOpen: boolean) => void;
+}
+
+export const FooterMobile: FC<Props> = ({isOpen, setIsOpen}) => (
 	<footer className={styles.footer}>
 		<Link to='/'>
 			<Logo />
 		</Link>
-		<div className={styles.rights}>© 2024 все права защищены</div>
+		<div className={styles.rights}>
+			{/*<button onClick={() => setIsOpen(true)} className={styles.policy}>*/}
+			{/*	политика конфиденциальности*/}
+			{/*</button>*/}
+			<div>
+				© 2024 все права защищены
+			</div>
+		</div>
 	</footer>
 );

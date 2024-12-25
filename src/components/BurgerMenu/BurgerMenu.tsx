@@ -8,7 +8,7 @@ import classNames from 'classnames';
 type Props = {};
 
 const BurgerMenu = (props: Props) => {
-	const [isOpen, setIsOpen] = useState<boolean>(true);
+	const [isOpen, setIsOpen] = useState<boolean>(false);
 
 	return (
 		<div className={styles.burger__menu}>
